@@ -95,8 +95,8 @@ SITEMAP = {
 }
 
 #静态文件目录拷贝
-EXTRA_PATH_METADATA = (
-    ("extra/robots.txt", "robots.txt"),
-    ("extra/generate_204", "generate_204"),
-)
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': { 'path': 'robots.txt' },
+    'extra/generate_204': {'path': 'generate_204' },
+}
 STATIC_PATHS = [u"img"]
