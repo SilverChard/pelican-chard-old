@@ -25,6 +25,11 @@
         </a>
     </h1>
     <div class="flow-text section" itemprop="text">
+        {% if article.toc %}
+            <div class="toc">
+            {{ article.toc }}
+            </div>
+        {% endif %}
         {{ article.content }}
     </div>
     <div class="divider"></div>

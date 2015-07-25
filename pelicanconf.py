@@ -71,7 +71,12 @@ PAGE_SAVE_AS = "{slug}.html"
 READERS = {'html': None}
 
 #插件
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = [
+                'pelican-plugins',
+                'pelican-toc',
+               ]
+#Markdown兼容toc扩展
+MD_EXTENSIONS = (['toc'])
 
 PLUGINS = [
           'sitemap',
