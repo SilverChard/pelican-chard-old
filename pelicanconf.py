@@ -85,3 +85,10 @@ SITEMAP = {
         "pages": "monthly",
     }
 }
+
+#静态文件目录拷贝
+FILES_TO_COPY = (
+    ("extra/robots.txt", "robots.txt"),
+    ("extra/generate_204", "generate_204"),
+)
+STATIC_PATHS = [u"img"]
