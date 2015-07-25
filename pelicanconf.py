@@ -2,10 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+#作者 站名 地址等信息
 AUTHER = u"Silver Chard"
 SITENAME = u"Silver's Blog"
 SITEURL = 'http://silverchard.me'
 
+#主题等
 PATH = 'content'
 THEME = '/usr/lib/python2.7/site-packages/pelican-3.6.0-py2.7.egg/pelican/themes/pelican-chard'
 
@@ -13,12 +15,14 @@ THEME = '/usr/lib/python2.7/site-packages/pelican-3.6.0-py2.7.egg/pelican/themes
 #使用目录名作为文章的分类名
 USE_FOLDER_AS_CATEGORY = True
 
+#时间格式 时区等
 TIMEZONE = 'Asia/Shanghai'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M'
 
+#默认语言
 DEFAULT_LANG = u'zh'
 
-
+# 各种常用feed 全～没～用～
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -26,10 +30,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# 友情链接
 # Blogroll
 LINKS = (('张骞', 'http://mcdona1d.me/'),
          ('刘亚龙', 'http://kidyalong.com/'),)
 
+#社交账号
 # Social widget
 SOCIAL = (('Facebook', 'https://www.facebook.com/ChardShieh'),
           ('Google+', 'https://plus.google.com/+SilverChard'),
@@ -37,13 +43,15 @@ SOCIAL = (('Facebook', 'https://www.facebook.com/ChardShieh'),
           ('QQ', 'http://user.qzone.qq.com/330680229'),
           ('Weibo', 'http://weibo.com/1843103547'),)
 
+
+#默认分页页码
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 
-# about pelican material 
+#导入partial包 服务于pelican-chard
 from functools import partial
 JINJA_FILTERS = {
     'sort_by_article_count': partial(
@@ -87,7 +95,7 @@ SITEMAP = {
 }
 
 #静态文件目录拷贝
-FILES_TO_COPY = (
+EXTRA_PATH_METADATA = (
     ("extra/robots.txt", "robots.txt"),
     ("extra/generate_204", "generate_204"),
 )
