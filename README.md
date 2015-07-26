@@ -6,26 +6,30 @@ pelican-chard is a theme of pelican. Fork from pelican-material.Server for my pe
 
 
 pelican-material/pelican-chard是基于[Materialize](http://materializecss.com/)的。所以需要安装Materialize才可以使用。Materialize是一款基于Google的Material设计规范的CSS/JS框架。可以使网站富有Material风格。
+
 Material is a [pelican](http://blog.getpelican.com/) theme based on [Materialize](http://materializecss.com/), a material design framework.
 
 ## 安装与调试 / Setup & Configuration
 
 **以下安装与调试说明将会基于CentOS7。其他操作系统可以适当根据自己的情况进行调整。**
 
-安装该主题
+安装该主题<br>
+install this theme
 ```bash
 #下载并安装该主题包（请确保已经安装pelican）
 cd ~
 git clone https://github.com/SilverChard/pelican-chard.git
 pelican-themes -i pelican-chard
-
 ```
-进入你的pelican-quickstart文件夹，修改pelicanconf.py文件，启用该主题。
+
+进入你的pelican-quickstart文件夹，修改pelicanconf.py文件，启用该主题。<br>
+cd your pelican-quickstart floder and edit pelicanconf.py to active this theme.
 ```bash
 cd /path/to/pelican-quickstart
 vim pelicanconf.py
 ```
-写入
+写入<br>
+write in
 ```python
 THEME = 'pelican-chard'
 from functools import partial
@@ -35,7 +39,8 @@ JINJA_FILTERS = {
         key=lambda tags: len(tags[1]),
         reverse=True)} # reversed for descending order
 ```
-安装Materizlize
+安装Materizlize<br>
+install Materizlize
 ```bash
 make html
 cd output/theme
