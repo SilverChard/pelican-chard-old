@@ -1,3 +1,7 @@
+==
+由于缺少太多文件和功能，又缺少太多关于pelican和Materialize的了解。故，我放弃了使用该主题。
+==
+
 # Pelican-Chard
 
 pelican-chard是fork自 [greizgh/pelican-material](https://github.com/greizgh/pelican-material)的 [pelican](http://blog.getpelican.com/) 主题。进行了一定的修改来服务于我的个人blog:[SilverChard](http://silverchard.me)。
